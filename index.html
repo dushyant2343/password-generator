@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="image">
+            <img src="assets/img1.png" alt="hero image" height="350px" >
+        </div> -->
+        <div class="box">
+            <h2 class="heading">Secure Password Generator</h2>
+            <form >
+                <div class="passwordBox">
+                    <label for="pass"></label>
+                    <input type="text" readonly id="pass" placeholder="Generated Password">
+                </div>
+                <div class="passLenBox">
+                    <input type="range" id="passLen" min="0" max="20">
+                    <label for="passLen" id="passLenLabel">8</label>
+                </div>
+                <div class="checkBoxWrapper">
+                    <div class="checkBoxBox">
+                        <input type="checkbox" class="checkbox" checked id="upp">
+                        <label class ="check-box-label" for="upp">Include Uppercase</label>
+                    </div>
+                    <div class="checkBoxBox">
+                        <input type="checkbox" class="checkbox" checked id="lwr">
+                        <label class ="check-box-label" for="lwr">Include Lowercase</label>
+                    </div>
+                    <div class="checkBoxBox">
+                        <input type="checkbox" class="checkbox" checked id="nmb">
+                        <label class ="check-box-label" for="nmb">Include Numbers</label>
+                    </div>
+                    <div class="checkBoxBox">
+                        <input type="checkbox" class="checkbox" checked id="sym">
+                        <label class ="check-box-label" for="sym">Include Symbols</label>
+                    </div>
+                </div>
+                <div class="submitContainer">
+                    <input type="button" class="button" id="generateButton" value="Generate Password">
+                    <input type="button" class="button" id="copy" value="Copy">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
